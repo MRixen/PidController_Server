@@ -458,19 +458,19 @@ namespace App1
                     sendSliderValueData((int)sliderValue);
 
                     // Delay for program execution. Its neccessary to avoid failures in data transmission
-                    delay(startTimeCheck, 20);
+                    delay(startTimeCheck, 40);
 
                     // Read encoder value from device via spi from can bus
-                    double encoderValue = receiveEncoderData();
+                    //double encoderValue = receiveEncoderData();
 
                     // Timer to generate timestamp
-                    stopWatchStart(stopwatch_timestamp);
+                    //stopWatchStart(stopwatch_timestamp);
 
                     // Send everything to client via tcp / ip
                     //sendDataToClient((int)sliderValue, encoderValue, stopwatch_timestamp.ElapsedMilliseconds, (int)pulses.active_pulse_type);
 
                     // Delay for program execution. Its neccessary to avoid failures in data transmission
-                    delay(startTimeCheck, 20);
+                    //delay(startTimeCheck, 20);
                 }
                 else
                 {
